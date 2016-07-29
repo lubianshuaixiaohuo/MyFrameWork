@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/update_dialog_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="发现新版本1.2.1"
+                    android:textColor="#666666"
+                    android:textSize="24sp"/>
+
+                <TextView
+                    android:id="@+id/update_dialog_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20sp"
+                    android:text="发现新版本1.2.1"
+                    android:textColor="#666666"
+                    android:textSize="14sp"/>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/update_dialog_confirm"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+          />
+
+        <ImageView
+            android:id="@+id/update_dialog_cancel"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

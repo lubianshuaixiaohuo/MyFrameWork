@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com.xiniao"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/waiting_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/waitdialog_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/wait_image_layout"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/wait_image"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:background="@anim/waiting"
+                android:contentDescription="@null"/>
+
+            <TextView
+                android:id="@+id/wait_image_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="请等待..."
+                android:textColor="@color/color_text_black2"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/wait_text_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/wait_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="正在下载"
+                android:textColor="@color/color_text_black2"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/wait_text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="正在下载正在下载正在下载正在下载正在下载正在下载正在下载正在下载正在下载正在下载正在下载"
+                android:textColor="@color/color_text_black2"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <com.baseframe.widget.WaitingDialog.NumberProgressBar
+            android:id="@+id/wait_numberbar"
+            style="@style/NumberProgressBar_Grace_Yellow"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:visibility="gone"
+            custom:max="100"
+            custom:progress="40"/>
+
+        <!-- 左右按钮-->
+        <LinearLayout
+            android:id="@+id/wait_btn_layout"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="15dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/color_line_gray"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/wait_left_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/btn_white_bg_bottomleftradius"
+                    android:gravity="center"
+                    android:text="确定"
+                    android:textColor="@color/color_text_blue"/>
+
+                <LinearLayout
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_line_gray"></LinearLayout>
+
+                <Button
+                    android:id="@+id/wait_right_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/btn_white_bg_bottomrightradius"
+                    android:gravity="center"
+                    android:text="取消"
+                    android:textColor="@color/color_text_blue"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- 单个按钮-->
+        <LinearLayout
+            android:id="@+id/wait_btn_layout2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="15dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/color_line_gray"></LinearLayout>
+
+
+
+                <Button
+                    android:id="@+id/wait_center_btn"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/btn_white_bg_bottomradius"
+                    android:text="返回评估首页"
+                    android:textColor="@color/color_text_blue"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

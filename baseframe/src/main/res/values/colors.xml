@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 线 灰色 -->
+    <color name="color_line_gray">#D9D9DE</color>
+    <!-- 字 浅黑色 -->
+    <color name="color_text_black2">#666666</color>
+    <color name="color_text_blue">#1A95FC</color>
+    <color name="white">#ffffff</color>
+
+    <!-- 背景 黑色 透明度10%-->
+    <color name="color_bg_black_10">#19000000</color>
+
+</resources>
